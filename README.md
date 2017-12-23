@@ -10,6 +10,22 @@ We apply this to cryptocurrency data to depict how changes in the price of Bitco
 
 We are currently using Python 3.5.
 
+## Plot.ly Set-up
+
+Go to https://plot.ly/feed/ and sign in if you have an account. Register if you do not. 
+
+Hover over where your username is listed and select "Settings" when collapsed.
+
+Navigate to the side bar and select "API Keys".
+
+Click the "Regenerate Key" button. Copy the generated key into your clipboard with Ctrl+C.
+
+Navigate to line 9 in crypto_plot.py and paste the key into the value for api_key. Enter your username where username asks for the value. It should look something like this:
+
+```
+plotly.tools.set_credentials_file(username='bwayne', api_key='totallynotbatman')
+```
+
 ## Usage
 
 ```
