@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import csv
 
 data = {}
@@ -38,4 +40,3 @@ for currency in data:
     writer.writeheader()
     for row in data[currency]:
       writer.writerow(row)
-

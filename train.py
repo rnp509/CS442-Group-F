@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import torch
 import torch.utils.data
 from torch.autograd import Variable

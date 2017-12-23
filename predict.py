@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import torch
 from torch.autograd import Variable
@@ -10,4 +12,3 @@ if __name__ == "__main__":
   measurement = Variable(torch.Tensor([[float(sys.argv[2]), float(sys.argv[3])]]))
   prediction = model(measurement)
   print(prediction)
-
